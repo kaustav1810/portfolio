@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { Container } from 'components/common';
-import { name, linkedinUrl, githubUrl } from 'data/config';
+import { name, linkedinUrl, githubUrl,twitterUrl } from 'data/config';
 import { ThemeContext } from 'providers/ThemeProvider';
 import linkedinLogo from 'assets/illustrations/linkedin_logo.png';
 import githubLogo from 'assets/illustrations/github_logo.png';
-
+import twitterLogoWhite from 'assets/illustrations/twitter_white.png';
 import { Wrapper, Flex, Details } from './styles';
 
 export const Footer = () => {
@@ -35,6 +35,9 @@ export const Footer = () => {
                 <a href={githubUrl} target="_blank" rel="noreferrer">
                   <img width="45" src={githubLogo} alt="GitHub" />
                 </a>
+                <a href={twitterUrl} target="_blank" rel="noreferrer">
+              <img width="45" src={twitterLogoWhite} alt="Twitter" />
+            </a>
               </div>
             </div>
           </Container>

@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import axios from 'axios';
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Button, Input } from 'components/common';
 import { Error, Center, InputField, Wrapper } from './styles';
+import { ThemeContext } from 'providers/ThemeProvider';
 
-export default () => (
+export const ContactForm =  () => {
+
+    const {theme} = useContext(ThemeContext);
+
+    return(
   <Wrapper>
     <h2>Contact</h2>
     <Formik
@@ -92,7 +97,7 @@ export default () => (
               </Center>
             </InputField>
           )}
-          <Center>
+          <Center theme={theme}>
             <Button secondary type="submit" disabled={isSubmitting} className="submit-btn">
               Submit
             </Button>
@@ -101,4 +106,5 @@ export default () => (
       )}
     </Formik>
   </Wrapper>
-);
+    )
+          };

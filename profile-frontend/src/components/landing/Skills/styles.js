@@ -11,11 +11,12 @@ export const Wrapper = styled.div`
   div{
       display:flex;
       flex-wrap:wrap;
-      justify-content:space-between;
+      justify-content:space-evenly;
   }
 
   img{
       height:100px;
       width:100px;
   }
+
 `

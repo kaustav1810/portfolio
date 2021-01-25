@@ -6,15 +6,23 @@ export const Wrapper = styled.div`
   p{
       width:80%;
       line-height:1.6rem;
-  }
-  a{
-      color:yellow;
+
+      a{
+      color:${({ theme }) => (theme === 'light' ? '#FF009A' : '#FFE702')};
+    }
   }
 
   div{
       display:flex;
       justify-content:space-between;
+
+      @media (max-width:510px){
+        flex-direction:column;
+    }
+
   }
+
+  
 `;
 
 export const Thumbnail = styled.div`
