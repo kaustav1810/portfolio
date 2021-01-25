@@ -231,7 +231,7 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
-      color: inherit;
+      color: ${({ theme }) => (theme === 'light' ? "#FF009A" : '#FFE702')};
       font-weight: bold;
       text-rendering: optimizeLegibility;
       font-size: 1.62671rem;

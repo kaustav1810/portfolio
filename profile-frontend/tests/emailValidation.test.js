@@ -13,5 +13,5 @@ test('check for invalid email constraint', async () => {
   userEvent.click(nameElem)
   await waitFor(() => { })
   expect(emailElem.hasAttribute("error")).toBe(true)
-  expect(emailElem.getAttribute("error")).toBe("Invalid email")
+  expect(emailElem.getAttribute("error")).toBe("invalid email")
 })

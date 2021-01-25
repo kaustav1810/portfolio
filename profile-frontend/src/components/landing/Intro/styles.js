@@ -21,7 +21,7 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 26pt; // TODO: change the font size to 36
+    font-size: 36pt; 
     color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
 
     @media (max-width: 960px) {
@@ -50,15 +50,16 @@ export const Details = styled.div`
     }
   }
   .hire-me {
-    background: ${({ theme }) => (theme === "light" ? "#005554" : "#66BD88")};
+    color: ${({theme}) => (theme === 'light'? "#fff":"#000")};
+    background: ${({ theme }) => (theme === "light" ? "#FF009A" : "#FFE702")};
     margin-right: 20px;
     border: 3px solid
-      ${({ theme }) => (theme === "light" ? "#005554" : "#66BD88")};
+      ${({ theme }) => (theme === "light" ? "#FF009A" : "#FFE702")};
     font-weight: bold;
   }
   .view-cv {
     background: transparent;
-    color: ${({ theme }) => (theme === "light" ? "#005554" : "#66BD88")};
+    color: ${({ theme }) => (theme === "light" ? "#FF009A" : "#FFE702")};
     border: 3px solid #005554;
     font-weight: bold;
   }
@@ -81,6 +82,7 @@ export const Thumbnail = styled.div`
   }
 
   img {
-    width: 70%;
+    width: 500px;
+    height:550px;
   }
 `;

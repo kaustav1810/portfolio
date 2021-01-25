@@ -10,7 +10,6 @@ import { Wrapper, Grid, Item, Content, Stats } from "./styles";
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
   const [repos, setRepos] = useState([]);
-  // console.log(process.env.GITHUB_TOKEN);
   useEffect(() => {
     axios
       .get("https://api.github.com/user/repos", {
@@ -28,7 +27,6 @@ export const Projects = () => {
         repoData.sort((a, b) =>
           a.stargazers_count < b.stargazers_count ? 1 : -1
         );
-        console.log(repoData);
         repoData = repoData.slice(0, 8);
         setRepos(repoData);
       })
@@ -36,7 +34,10 @@ export const Projects = () => {
   }, []);
   return (
     <Wrapper as={Container} id="projects">
-      {repos.length > 0 && <h2>Projects</h2>}
+      {repos.length > 0 && <><h2>Projects</h2>
+      <p>Apart from writing blogs I also like to build web dev projects by the night.
+          You can view some of them here.Connect with me if you would like to 
+          collab on a project.</p></>}
       <Grid>
         {repos.map((node) => (
           <Item

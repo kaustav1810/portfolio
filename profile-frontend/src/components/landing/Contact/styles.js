@@ -48,6 +48,7 @@ export const Thumbnail = styled.div`
   }
 
   img {
-    width: 50%;
+    width:300px;
+    height:400px
   }
 `;

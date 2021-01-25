@@ -11,6 +11,15 @@ export const Center = styled.div`
   h4 {
     font-weight: normal;
   }
+
+  .submit-btn{
+    color: ${({ theme }) => (theme === "light" ? "#fff" : "#000")};
+    background: ${({ theme }) => (theme === "light" ? "#FF009A" : "#FFE702")};
+    margin-right: 20px;
+    border: 3px solid ${({ theme }) => (theme === "light" ? "#FF009A" : "#FFE702")};
+    font-weight: bold;
+  }
+  
 `;
 
 export const InputField = styled.div`
@@ -20,9 +29,10 @@ export const InputField = styled.div`
 
 export const Wrapper = styled.div`
   .submit-btn {
-    background: ${({ theme }) => (theme === 'light' ? '#005554' : '#66BD88')};
+    color: ${({theme}) => (theme === 'light'? "#fff":"#000")};
+    background: ${({ theme }) => (theme === 'light' ? "#FF009A" : "#FFE702")};
     margin-right: 20px;
-    border: 3px solid ${({ theme }) => (theme === 'light' ? '#005554' : '#66BD88')};
+    border: 3px solid ${({ theme }) => (theme === 'light' ? "#FF009A" : "#FFE702")};
     font-weight: bold;
   }
 `;

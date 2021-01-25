@@ -4,13 +4,13 @@ export const Wrapper = styled.div`
   .footer-dark {
     width: 100%;
     padding: 4rem 0rem 2rem 0rem;
-    background: #66bd88;
+    background: #FFE702;
     color: #000;
   }
   .footer-light {
     width: 100%;
     padding: 4rem 0rem 2rem 0rem;
-    background: #e3e1d5;
+    background: #FF009A;
     color: #000;
   }
   .powered {

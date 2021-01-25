@@ -28,7 +28,7 @@ export const Item = styled.div`
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   h4 {
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    color: ${({ theme }) => (theme === 'light' ? "#FF009A" : '#FFE702')};
   }
 
   p {

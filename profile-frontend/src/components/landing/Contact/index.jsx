@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'components/common';
-import contact from 'assets/illustrations/contact.png';
+import mailbox from 'assets/illustrations/undraw_Mailbox_re_dvds.svg';
 import { Wrapper, Details, Thumbnail } from './styles';
 import ContactForm from './ContactForm';
 
@@ -10,7 +10,7 @@ export const Contact = () => (
       <ContactForm />
     </Details>
     <Thumbnail>
-      <img src={contact} alt="Crio.Do" />
+      <img src={mailbox} alt="Crio.Do" />
     </Thumbnail>
   </Wrapper>
 );

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   .menu a {
-    color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+    color: ${({ theme }) => (theme === 'light' ? '#FF009A' : '#FFE702')};
   }
   .menu {
     display: flex;
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     text-decoration: none;
 
     @media (max-width: 960px) {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+      color: ${({ theme }) => (theme === 'light' ? '#FF009A' : '#FFE702')};
     }
   }
 
